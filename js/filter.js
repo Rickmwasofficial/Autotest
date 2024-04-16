@@ -11,7 +11,7 @@ let rent = document.querySelector(".rentdiv")
 let room = document.querySelector(".roomdiv")
 let wifi = document.querySelector(".wifidiv")
 
-
+// Toast trigger logic for successfully applying filters
 toastTrigger.addEventListener('click', function () {
     displayFilterLoad()
     let apply = new bootstrap.Toast(toastLiveExample)
@@ -19,6 +19,7 @@ toastTrigger.addEventListener('click', function () {
 
 })
 
+// Display the loading icon
 function displayFilterLoad() {
     section.innerHTML = `
         <div class="d-flex justify-content-center loader" style="display: none;">
@@ -28,6 +29,8 @@ function displayFilterLoad() {
     </div>
     `
 }
+
+// Remove the Loading Icon
 function removeFilterLoad() {
     section.innerHTML = `
 
@@ -36,8 +39,8 @@ function removeFilterLoad() {
     `
 }
 
+// Clear all filters
 function clearFilter() {
-    
     rent.innerHTML = `
     <div class="form-check defaultchecked">
             <input class="form-check-input" type="radio" name="rent" id="rent0" value="3" checked>
@@ -118,8 +121,7 @@ function clearFilter() {
     `
     
 }
-
-
+// Toast Trigger for successfully clearing all filters
 clearFilterTrigger.addEventListener('click', function () {
     displayFilterLoad()
     let clear = new bootstrap.Toast(clearFilterToast)
