@@ -34,10 +34,10 @@ function displayCards() {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src=${images[0]} class="d-block w-100 img-thumbnail" alt="...">
+            <img src=${images[0]} class="d-block w-100 img-thumbnail" load="eager" alt="...">
           </div>
           <div class="carousel-item">
-            <img src=${images[1]} class="d-block w-100 img-thumbnail" alt="...">
+            <img src=${images[1]} class="d-block w-100 img-thumbnail" load="eager" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel${i}" data-bs-slide="prev">
