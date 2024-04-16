@@ -1,6 +1,9 @@
+// This file is for the create account and login modal. Helps the modal switch from create account to login and vice versa
+
 let loginForm = document.querySelector(".logform")
 let modalLabel = document.querySelector("#exampleModalLabel")
 
+// function to switch the modal content to login
 function toLoginForm() {
     modalLabel.innerHTML = "Welcome Back!"
     loginForm.innerHTML = `
@@ -27,6 +30,7 @@ function toLoginForm() {
     `
 }
 
+// function to switch the modal content to create account
 function toCreateForm() {
     modalLabel.innerHTML = `Welcome to <span class="text-danger">Roomify Kenya</span>`
     loginForm.innerHTML = `
