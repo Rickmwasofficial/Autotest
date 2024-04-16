@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--Small icon to be displayed on top of the tab-->
+    <link rel="icon" href="pixelcut-export (2).png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>ROOMIFY KENYA</title>
+    
+    <style>
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        a:hover {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+        .form-check {
+          margin-left: 10px;
+        }
+        /* .heading {
+          text-shadow:
+            0.05em 0 black,
+            0 0.05em black,
+            -0.05em 0 black,
+            0 -0.05em black,
+            -0.05em -0.05em black,
+            -0.05em 0.05em black,
+            0.05em -0.05em black,
+            0.05em 0.05em black;
+
+        } */
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-md container-fluid d-flex">
+      <a class="navbar-brand d-flex my-auto" href="#">
+        <img src="newlohg-transformed.png" alt="" width="auto" height="54" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end text-end mt-3 navbar-collapse" id="navbarTogglerDemo02">
+        
+        <button type="button" class="btn btn-transparent position-relative">
+          <img src="shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset="">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background: red;">
+            0
+            <span class="visually-hidden">Items added to cart</span>
+          </span>
+        </button>
+        <button class="btn text-white ms-3" style="background: red;" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Account</button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Welcome to <span class="text-danger">Roomify Kenya</span></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <form action="" class="logform">
+                <p>Already have an account? <button class="text-danger login22 border-0 bg-transparent" onclick="toLoginForm()">Login</button></p>
+               
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Full names">
+                  <label for="floatingInput">Name <span class="text-danger">*</span></label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" aria-describedby="descemail">
+                  <label for="floatingInput">Email address <span class="text-danger">*</span></label>
+                  <div id="descemail" class="form-text">
+                    example@gmail.com
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" aria-describedby="desctext">
+                  <label for="floatingPassword">Password <span class="text-danger">*</span></label>
+                  <div id="desctext" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword2" placeholder="Password">
+                  <label for="floatingPassword2">Confirm Password <span class="text-danger">*</span></label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn text-light" style="background: red;" disabled="true">Create</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-md container-fluid ndnav text-white" style="background: red;">
+    <div class="row" style="height: 100%;">
+      <a class="col my-auto text-center py-2" href="#">Home</a>
+      <a class="col my-auto text-center py-2" href="#">Categories</a>
+      <a class="col my-auto text-center py-2" href="#">About</a>
+      <a class="col my-auto text-center py-2" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">Filter</a>
+    </div>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-danger">
+        <h5 id="offcanvasRightLabel">ROOMIFY KENYA</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <label for="exampleDataList" class="form-label text-dark">Search By University</label>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="University Of Embu">
+            <option value="Chuka University, Embu Branch">
+            <option value="Mount Kenya University, Embu branch">
+            <option value="Embu University College">
+            <option value="KMTC, Embu">
+          </datalist>
+        <h4 class="text-dark mt-3">Filter</h4>
+        <h5 class="text-dark mt-3">Rent Amount</h5>
+        <div class="rentdiv">
+          <div class="form-check defaultchecked">
+            <input class="form-check-input" type="radio" name="rent" id="rent0" value="3" checked>
+            <label class="form-check-label text-dark" for="rent0">
+              All
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent1" value="1">
+            <label class="form-check-label text-dark" for="rent1">
+              KSH 3000 - 7000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent2" value="2">
+            <label class="form-check-label text-dark" for="rent2">
+              KSH 7000 - 12000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent3" value="3">
+            <label class="form-check-label text-dark" for="rent3">
+              KSH 12000 - 15000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent4" value="4">
+            <label class="form-check-label text-dark" for="rent4">
+              KSH 15000 - 20000
+            </label>
+          </div>
+        </div>
+        <h5 class="text-dark mt-3">Room Type</h5>
+        <div class="roomdiv">
+          <div class="form-check defaultchecked">
+            <input class="form-check-input" type="radio" name="roomtype" id="allroom" value="3" checked>
+            <label class="form-check-label text-dark" for="allroom">
+              All
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="bedsitter" value="0">
+            <label class="form-check-label text-dark" for="bedsitter">
+              Bedsitter
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="onebedroom" value="1">
+            <label class="form-check-label text-dark" for="onebedroom">
+              One bedroom
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="twobedroom" value="2">
+            <label class="form-check-label text-dark" for="twobedroom">
+              Two Bedroom
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="moreroom" value="3">
+            <label class="form-check-label text-dark" for="moreroom">
+              More
+            </label>
+          </div>
+        </div>
+        <h5 class="text-dark mt-3">Wifi Enabled</h5>
+        <div class="wifidiv">
+          <div class="form-check defaultchecked">
+            <input class="form-check-input" type="radio" name="Wifi" id="wifiyes" value="1" checked>
+            <label class="form-check-label text-dark" for="wifiyes">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Wifi" id="wifino" value="0">
+            <label class="form-check-label text-dark" for="wifino">
+              No
+            </label>
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-12 mx-auto my-4 loadfilter">
+          <button class="btn btn-primary" type="button" id="liveToastBtn">Apply Filters</button>
+          <button class="btn btn-danger clear" type="button" id="clearFilterToastBtn">Clear Filters</button>
+        </div>
+        
+        <div class="position-fixed bottom-0 end-0 ms-4 p-2" style="z-index: 11">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="houseonly.png" width="40px" height="40px" class="rounded me-2" alt="...">
+              <strong class="me-auto">Roomify Kenya</strong>
+              <small>Just Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-success">
+              Filters applied successfully
+            </div>
+          </div>
+        </div>
+        <div class="position-fixed bottom-0 end-0 ms-4 p-2" style="z-index: 11">
+          <div id="clearFilterToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="houseonly.png" width="40px" height="40px" class="rounded me-2" alt="...">
+              <strong class="me-auto">Roomify Kenya</strong>
+              <small>Just Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-success">
+              Filters removed successfully
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-md container-fluid" style="background: url('watercolor-texture-background.jpg'); background-size: cover; background-blend-mode: darken; background-position: center;">
+    <div class="row my-auto">
+      <div class="col-12 col-lg-6 my-5">
+        <div class="card text-center text-lg-start ms-lg-5 border-0 bg-transparent">
+          <div class="card-body">
+            <h1 style="color: blue;">Book Smart. Live Smart</h1>
+            <p style="color: rgb(0, 0, 0);">Heading to university? Your adventure starts with where you call home. At Roomify, we've crafted the ultimate housing hub just for you! Your dream space is just a click away. Join our community of students finding the ideal nest for their university adventure. Let's make your off-campus life as epic as your on-campus experiences!
+            </p>
+            
+            <a href="#" class="btn text-white col-8" style="background: red;" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 text-center d-none mt-5 d-lg-block">
+        <img src="undraw_buy_house_re_8xq7.svg" class="img-fluid" width="65%" height="40%" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-md container-fluid">
+    <div class="container">
+      <div class="row cardrow my-5">
+        
+        
+      </div>
+
+    </div>
+    
+  </div>
+   
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/filter.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
