@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The Meta tags with description and property add an image and a brief decription to be shown when the website link is shared -->
     <meta name="description" content="Heading to university? Your adventure starts with where you call home. At Roomify, we've crafted the ultimate housing hub just for you!">
     <meta property="og:image" content="https://rickmwasofficial.github.io/Autotest/Public/houseonly.png">
     <link rel="stylesheet" href="/Autotest/css/bootstrap.css">
@@ -24,31 +25,30 @@
         .form-check {
           margin-left: 10px;
         }
-        /* .heading {
-          text-shadow:
-            0.05em 0 black,
-            0 0.05em black,
-            -0.05em 0 black,
-            0 -0.05em black,
-            -0.05em -0.05em black,
-            -0.05em 0.05em black,
-            0.05em -0.05em black,
-            0.05em 0.05em black;
-
-        } */
+        
     </style>
 </head>
 <body>
+    <!-- The NavBar -->
+    
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-md container-fluid d-flex">
+        
+    <!-- Roomify Logo -->
+        
       <a class="navbar-brand d-flex my-auto" href="#">
         <img src="newlohg-transformed.png" alt="" width="auto" height="54" class="d-inline-block align-text-top">
       </a>
+        
+        <!-- Hamburger Icon and Button to hide cart and create account buttons when screen size is smaller -->
+        
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse justify-content-end text-end mt-3 navbar-collapse" id="navbarTogglerDemo02">
         
+        <!-- Cart and Create account buttons with bootstrap logic -->
+        
+      <div class="collapse justify-content-end text-end mt-3 navbar-collapse" id="navbarTogglerDemo02">
         <button type="button" class="btn btn-transparent position-relative">
           <img src="shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset="">
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background: red;">
@@ -56,9 +56,14 @@
             <span class="visually-hidden">Items added to cart</span>
           </span>
         </button>
+          
+        <!-- Create account button triggers the Modal where users can create accounts or login -->
+          
         <button class="btn text-white ms-3" style="background: red;" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Account</button>
       </div>
-      <!-- Modal -->
+        
+      <!-- Modal for Login or Create account-->
+        
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -67,10 +72,8 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              
               <form action="" class="logform">
                 <p>Already have an account? <button class="text-danger login22 border-0 bg-transparent" onclick="toLoginForm()">Login</button></p>
-               
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Full names">
                   <label for="floatingInput">Name <span class="text-danger">*</span></label>
@@ -104,14 +107,22 @@
       </div>
     </div>
   </nav>
+    
+<!-- Small nav to help navigate the website -->
+    
   <div class="container-md container-fluid ndnav text-white" style="background: red;">
     <div class="row" style="height: 100%;">
       <a class="col my-auto text-center py-2" href="#">Home</a>
       <a class="col my-auto text-center py-2" href="#">Categories</a>
       <a class="col my-auto text-center py-2" href="#">About</a>
+        
+      <!-- Filter Button triggers the offcanvas -->
+        
       <a class="col my-auto text-center py-2" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">Filter</a>
     </div>
-    <!-- offcanvas -->
+      
+    <!-- offcanvas where users can search and apply filters -->
+      
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header bg-danger">
         <h5 id="offcanvasRightLabel">ROOMIFY KENYA</h5>
@@ -213,7 +224,9 @@
           <button class="btn btn-primary" type="button" id="liveToastBtn">Apply Filters</button>
           <button class="btn btn-danger clear" type="button" id="clearFilterToastBtn">Clear Filters</button>
         </div>
-        
+          
+        <!-- Toast to be displayed a defined number of seconds -->
+          
         <div class="position-fixed bottom-0 end-0 ms-4 p-2" style="z-index: 11">
           <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
@@ -227,6 +240,9 @@
             </div>
           </div>
         </div>
+          
+          <!-- Toast to be displayed a defined number of seconds -->
+          
         <div class="position-fixed bottom-0 end-0 ms-4 p-2" style="z-index: 11">
           <div id="clearFilterToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
@@ -243,6 +259,9 @@
       </div>
     </div>
   </div>
+    
+<!-- Container with welcome message and a Get started that triggers the create account modal -->
+    
   <div class="container-md container-fluid" style="background: url('watercolor-texture-background.jpg'); background-size: cover; background-blend-mode: darken; background-position: center;">
     <div class="row my-auto">
       <div class="col-12 col-lg-6 my-5">
@@ -251,7 +270,6 @@
             <h1 style="color: blue;">Book Smart. Live Smart</h1>
             <p style="color: rgb(0, 0, 0);">Heading to university? Your adventure starts with where you call home. At Roomify, we've crafted the ultimate housing hub just for you! Your dream space is just a click away. Join our community of students finding the ideal nest for their university adventure. Let's make your off-campus life as epic as your on-campus experiences!
             </p>
-            
             <a href="#" class="btn text-white col-8" style="background: red;" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
           </div>
         </div>
@@ -262,16 +280,18 @@
     </div>
   </div>
 
+<!-- Container that has the houses, this logic is handled by home.js -->
+    
   <div class="container-md container-fluid">
     <div class="container">
       <div class="row cardrow my-5">
-        
-        
+         
       </div>
-
     </div>
-    
   </div>
+    
+    <!-- The pagination below helps to switch pages when maximun number of houses in one page is reached -->
+    
     <nav aria-label="change page">
     <ul class="pagination justify-content-center mt-0">
       <li class="page-item">
@@ -290,6 +310,8 @@
     </ul>
   </nav>
 
+<!-- The footer -->
+    
   <div class="container-fluid bg-dark text-light">
     <div class="container">
       <div class="row">
