@@ -1,5 +1,5 @@
-
 let cards = document.querySelector(".cardrow")
+let images = ["pexels-josh-sorenson-111093.jpg", "pexels-daniel-maforte-5544034.jpg"]
 let details = new Map([
   [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0]],
   [1, ["Doe Towers", "4000", "Bedsitter", 4.0]],
@@ -23,11 +23,32 @@ let details = new Map([
 displayCards()
 function displayCards() {
   for (let i = 0; i < 12; i++) {
-    img = "https://picsum.photos/300/300"
+    img = images[0]
     cards.innerHTML += `
     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
     <div class="card  my-2">
-      <img src=${img} class="card-img-top img-thumbnail" alt="...">
+      <div id="carousel${i}" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src=${images[0]} class="d-block w-100 img-thumbnail" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src=${images[1]} class="d-block w-100 img-thumbnail" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel${i}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel${i}" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div class="card-body">
         <h5 class="card-title">${details.get(i)[0]}</h5>
         <p class="card-text mb-1">Type: ${details.get(i)[2]}</p>
@@ -35,7 +56,7 @@ function displayCards() {
           <p>Rent: ${details.get(i)[1]}</p>
           <p>Rating: <span class="text-danger">${details.get(i)[3]}.0</span></p>
         </div>
-        <button class="btn btn-primary" disabled='true'>Add to cart</button>
+        <a href="details.html" class="btn btn-primary" disabled='true'>View More</a>
       </div>
     </div>
   </div>
