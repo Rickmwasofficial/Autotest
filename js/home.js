@@ -1,5 +1,7 @@
-console.log(document.title)
 let cards = document.querySelector(".cardrow")
+
+// Dummy values for Images and details in the future this will be extracted from the database
+
 let images = ["pexels-josh-sorenson-111093.jpg", "pexels-daniel-maforte-5544034.jpg"]
 let details = new Map([
   [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0]],
@@ -43,7 +45,11 @@ let details = new Map([
   [38, ["Jupiter Plaza", "6000", "Bedsitter", 4.0]]
 
 ])
+
+// Display the first set of cards when the page loads
 displayCards(0, 12)
+
+// function that uses pagination on home.html to determine which cards are on the page
 function displayCards(start, stop, def=1) {
   console.log(start, stop)
   cards.innerHTML = ""
@@ -87,6 +93,7 @@ function displayCards(start, stop, def=1) {
   </div>
     `
   }
+  // This logic stops the browser from putting the first house into view when the page loads initially, and puts the house into view only when the pagination buttons were clicked
   id = `carousel${start}`
   if (id !== `carousel0` || def == 0) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
