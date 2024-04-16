@@ -1,3 +1,4 @@
+console.log(document.title)
 let cards = document.querySelector(".cardrow")
 let images = ["pexels-josh-sorenson-111093.jpg", "pexels-daniel-maforte-5544034.jpg"]
 let details = new Map([
@@ -17,12 +18,36 @@ let details = new Map([
   [13, ["Space Apartments", "5500", "Bedsitter", 4.0]],
   [14, ["Tesla Plaza", "6000", "Bedsitter", 4.0]],
   [15, ["Benz Towers", "7000", "Bedsitter", 4.0]],
-  [16, ["Jack Towers", "8000", "One Bedroom", 4.0]]
+  [16, ["Jack Towers", "8000", "One Bedroom", 4.0]],
+  [17, ["Dundee Towers", "4000", "Bedsitter", 4.0]],
+  [18, ["Power Towers", "4000", "Bedsitter", 4.0]],
+  [19, ["Tribe Plaza", "5000", "Bedsitter", 4.0]],
+  [20, ["Kent Towers", "6000", "Bedsitter", 4.0]],
+  [21, ["Krypton Towers", "12000", "One Bedroom", 4.0]],
+  [22, ["Hiddenville Plaza", "13000", "Two Bedroom", 4.0]],
+  [23, ["Beacon Apartments", "12000", "One Bedroom", 4.0]],
+  [24, ["Hill Towers", "5000", "Bedsitter", 4.0]],
+  [25, ["Swellview Towers", "5000", "Bedsitter", 4.0]],
+  [26, ["BBottom Towers", "4600", "Bedsitter", 4.0]],
+  [27, ["Angeles Apartments", "4900", "Bedsitter", 4.0]],
+  [28, ["Jordan Towers", "4500", "Bedsitter", 4.0]],
+  [29, ["Carnegie Apartments", "3000", "Outside", 4.0]],
+  [30, ["Mars Apartments", "5500", "Bedsitter", 4.0]],
+  [31, ["Jupiter Plaza", "6000", "Bedsitter", 4.0]],
+  [32, ["Mercury Towers", "7000", "Bedsitter", 4.0]],
+  [33, ["Venus Towers", "4600", "Bedsitter", 4.0]],
+  [34, ["Earth Apartments", "4900", "Bedsitter", 4.0]],
+  [35, ["Pluto Towers", "4500", "Bedsitter", 4.0]],
+  [36, ["Makemake Apartments", "3000", "Outside", 4.0]],
+  [37, ["Saturn Apartments", "5500", "Bedsitter", 4.0]],
+  [38, ["Jupiter Plaza", "6000", "Bedsitter", 4.0]]
 
 ])
-displayCards()
-function displayCards() {
-  for (let i = 0; i < 12; i++) {
+displayCards(0, 12)
+function displayCards(start, stop, def=1) {
+  console.log(start, stop)
+  cards.innerHTML = ""
+  for (let i = start; i < stop; i++) {
     img = images[0]
     cards.innerHTML += `
     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
@@ -34,10 +59,10 @@ function displayCards() {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src=${images[0]} class="d-block w-100 img-thumbnail" load="eager" alt="...">
+            <img src=${images[0]} class="d-block w-100 img-thumbnail" alt="...">
           </div>
           <div class="carousel-item">
-            <img src=${images[1]} class="d-block w-100 img-thumbnail" load="eager" alt="...">
+            <img src=${images[1]} class="d-block w-100 img-thumbnail" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel${i}" data-bs-slide="prev">
@@ -61,5 +86,9 @@ function displayCards() {
     </div>
   </div>
     `
+  }
+  id = `carousel${start}`
+  if (id !== `carousel0` || def == 0) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   }
 }
