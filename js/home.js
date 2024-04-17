@@ -87,7 +87,7 @@ function displayCards(start, stop, def=1) {
           <p>Rent: ${details.get(i)[1]}</p>
           <p>Rating: <span class="text-danger">${details.get(i)[3]}.0</span></p>
         </div>
-        <a href="details.html" class="btn btn-primary" disabled='true'>View More</a>
+        <a href="/Autotest/Public/housedetails.html" class="btn btn-primary" disabled='true'>View More</a>
       </div>
     </div>
   </div>
@@ -98,4 +98,8 @@ function displayCards(start, stop, def=1) {
   if (id !== `carousel0` || def == 0) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   }
+}
+function toTop() {
+  console.log("hello")
+  document.getElementById('navigation').scrollIntoView({ behavior: 'smooth' })
 }
