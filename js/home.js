@@ -87,7 +87,7 @@ function displayCards(start, stop, def=1) {
           <p>Rent: ${details.get(i)[1]}</p>
           <p>Rating: <span class="text-danger">${details.get(i)[3]}.0</span></p>
         </div>
-        <a href="/Autotest/Public/housedetails.html" class="btn btn-primary" disabled='true'>View More</a>
+        <a href="/Autotest/Public/housedetails.html" class="btn btn-primary" disabled='true'>See More Details</a>
       </div>
     </div>
   </div>
