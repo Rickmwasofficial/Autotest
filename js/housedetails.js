@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="bookdiv">
                         <b style="font-size: 20px;">Ksh ${housedetails[1]} per month</b>
                         <div class="in">
-                            <b>Rooms: ${housedetails[7]}</b><hr>
+                            <b>Rooms: ${housedetails[7]}</b>
+                            <div class="vr mx-auto"></div>
                             <b>Vacancies: ${housedetails[8]}</b>
                         </div>
                         <button class="bookbutton container">
