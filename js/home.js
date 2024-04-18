@@ -48,12 +48,22 @@ let details = new Map([
 
 //send the data to localStorage
 function saveInfo(index) {
-  localStorage.clear()
-  console.log(details.get(index))
-  localStorage.setItem("housedetails", JSON.stringify(details.get(index)))
-  window.location.href = "https://rickmwasofficial.github.io/Autotest/Public/housedetails.html";
+  function navigate() {
+    localStorage.clear()
+    console.log(details.get(index))
+    localStorage.setItem("housedetails", JSON.stringify(details.get(index)))
+    window.location.href = "https://rickmwasofficial.github.io/Autotest/Public/housedetails.html";
+  }
+  document.querySelector(`.carousel${index}`).innerHTML = `
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Loading...
+  `
+  setTimeout(() => {
+    document.querySelector(`.carousel${index}`).innerHTML = `
+    See More details`;
+    navigate()
+  }, 3000)
 }
-
 // Display the first set of cards when the page loads
 displayCards(0, 12)
 
@@ -95,7 +105,7 @@ function displayCards(start, stop, def=1) {
           <p>Rent: ${details.get(i)[1]}</p>
           <p>Rating: <span class="text-danger">${details.get(i)[3]}.0</span></p>
         </div>
-        <button class="btn btn-primary" onclick="saveInfo(${i})">See More details</button>
+        <button class="btn btn-primary carousel${i}" onclick="saveInfo(${i})">See More details</button>
       </div>
     </div>
   </div>
