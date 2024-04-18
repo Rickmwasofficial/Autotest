@@ -4,47 +4,55 @@ let cards = document.querySelector(".cardrow")
 
 let images = ["pexels-josh-sorenson-111093.jpg", "pexels-daniel-maforte-5544034.jpg"]
 let details = new Map([
-  [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0]],
-  [1, ["Doe Towers", "4000", "Bedsitter", 4.0]],
-  [2, ["Anthropic Plaza", "5000", "Bedsitter", 4.0]],
-  [3, ["Open Towers", "6000", "Bedsitter", 4.0]],
-  [4, ["Detail Towers", "12000", "One Bedroom", 4.0]],
-  [5, ["Star Plaza", "13000", "Two Bedroom", 4.0]],
-  [6, ["UOE Apartments", "12000", "One Bedroom", 4.0]],
-  [7, ["Mike Towers", "5000", "Bedsitter", 4.0]],
-  [8, ["Homify Towers", "5000", "Bedsitter", 4.0]],
-  [9, ["Kirubi Towers", "4600", "Bedsitter", 4.0]],
-  [10, ["China Apartments", "4900", "Bedsitter", 4.0]],
-  [11, ["Unknown Towers", "4500", "Bedsitter", 4.0]],
-  [12, ["Lagos Apartments", "3000", "Outside", 4.0]],
-  [13, ["Space Apartments", "5500", "Bedsitter", 4.0]],
-  [14, ["Tesla Plaza", "6000", "Bedsitter", 4.0]],
-  [15, ["Benz Towers", "7000", "Bedsitter", 4.0]],
-  [16, ["Jack Towers", "8000", "One Bedroom", 4.0]],
-  [17, ["Dundee Towers", "4000", "Bedsitter", 4.0]],
-  [18, ["Power Towers", "4000", "Bedsitter", 4.0]],
-  [19, ["Tribe Plaza", "5000", "Bedsitter", 4.0]],
-  [20, ["Kent Towers", "6000", "Bedsitter", 4.0]],
-  [21, ["Krypton Towers", "12000", "One Bedroom", 4.0]],
-  [22, ["Hiddenville Plaza", "13000", "Two Bedroom", 4.0]],
-  [23, ["Beacon Apartments", "12000", "One Bedroom", 4.0]],
-  [24, ["Hill Towers", "5000", "Bedsitter", 4.0]],
-  [25, ["Swellview Towers", "5000", "Bedsitter", 4.0]],
-  [26, ["BBottom Towers", "4600", "Bedsitter", 4.0]],
-  [27, ["Angeles Apartments", "4900", "Bedsitter", 4.0]],
-  [28, ["Jordan Towers", "4500", "Bedsitter", 4.0]],
-  [29, ["Carnegie Apartments", "3000", "Outside", 4.0]],
-  [30, ["Mars Apartments", "5500", "Bedsitter", 4.0]],
-  [31, ["Jupiter Plaza", "6000", "Bedsitter", 4.0]],
-  [32, ["Mercury Towers", "7000", "Bedsitter", 4.0]],
-  [33, ["Venus Towers", "4600", "Bedsitter", 4.0]],
-  [34, ["Earth Apartments", "4900", "Bedsitter", 4.0]],
-  [35, ["Pluto Towers", "4500", "Bedsitter", 4.0]],
-  [36, ["Makemake Apartments", "3000", "Outside", 4.0]],
-  [37, ["Saturn Apartments", "5500", "Bedsitter", 4.0]],
-  [38, ["Jupiter Plaza", "6000", "Bedsitter", 4.0]]
+  [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [1, ["Doe Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [2, ["Anthropic Plaza", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [3, ["Open Towers", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [4, ["Detail Towers", "12000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [5, ["Star Plaza", "13000", "Two Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [6, ["UOE Apartments", "12000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [7, ["Mike Towers", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [8, ["Homify Towers", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [9, ["Kirubi Towers", "4600", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [10, ["China Apartments", "4900", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [11, ["Unknown Towers", "4500", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [12, ["Lagos Apartments", "3000", "Outside", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [13, ["Space Apartments", "5500", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [14, ["Tesla Plaza", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [15, ["Benz Towers", "7000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [16, ["Jack Towers", "8000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [17, ["Dundee Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [18, ["Power Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [19, ["Tribe Plaza", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [20, ["Kent Towers", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [21, ["Krypton Towers", "12000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [22, ["Hiddenville Plaza", "13000", "Two Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [23, ["Beacon Apartments", "12000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [24, ["Hill Towers", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [25, ["Swellview Towers", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [26, ["BBottom Towers", "4600", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [27, ["Angeles Apartments", "4900", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [28, ["Jordan Towers", "4500", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [29, ["Carnegie Apartments", "3000", "Outside", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [30, ["Mars Apartments", "5500", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [31, ["Jupiter Plaza", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [32, ["Mercury Towers", "7000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [33, ["Venus Towers", "4600", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [34, ["Earth Apartments", "4900", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [35, ["Pluto Towers", "4500", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [36, ["Makemake Apartments", "3000", "Outside", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [37, ["Saturn Apartments", "5500", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [38, ["Jupiter Plaza", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]]
 
 ])
+
+//send the data to localStorage
+function saveInfo(index) {
+  localStorage.clear()
+  console.log(details.get(index))
+  localStorage.setItem("housedetails", JSON.stringify(details.get(index)))
+  window.location.href = "Autotest/Public/housedetails.html";
+}
 
 // Display the first set of cards when the page loads
 displayCards(0, 12)
@@ -87,7 +95,7 @@ function displayCards(start, stop, def=1) {
           <p>Rent: ${details.get(i)[1]}</p>
           <p>Rating: <span class="text-danger">${details.get(i)[3]}.0</span></p>
         </div>
-        <a href="/Autotest/Public/housedetails.html" class="btn btn-primary" disabled='true'>See More Details</a>
+        <button class="btn btn-primary" onclick="saveInfo(${i})">See More details</button>
       </div>
     </div>
   </div>
