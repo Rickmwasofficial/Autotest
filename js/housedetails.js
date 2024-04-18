@@ -63,9 +63,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         <button class="bookbutton container">
                             <b>Book Room</b>
                         </button>
-                        <button class="bookbutton container">
-                            <b>Book Room</b>
-                        </button>
                         <button class="addcart container">
                             <b>Add to Cart</b>
                         </button>
