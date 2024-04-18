@@ -4,10 +4,10 @@ let cards = document.querySelector(".cardrow")
 
 let images = ["pexels-josh-sorenson-111093.jpg", "pexels-daniel-maforte-5544034.jpg"]
 let details = new Map([
-  [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
-  [1, ["Doe Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
-  [2, ["Anthropic Plaza", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
-  [3, ["Open Towers", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [1, ["Doe Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [2, ["Anthropic Plaza", "5000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
+  [3, ["Open Towers", "6000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
   [4, ["Detail Towers", "12000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
   [5, ["Star Plaza", "13000", "Two Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
   [6, ["UOE Apartments", "12000", "One Bedroom", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
