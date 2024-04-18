@@ -51,7 +51,7 @@ function saveInfo(index) {
   localStorage.clear()
   console.log(details.get(index))
   localStorage.setItem("housedetails", JSON.stringify(details.get(index)))
-  window.location.href = "housedetails.html";
+  window.location.href = "https://rickmwasofficial.github.io/Autotest/Public/housedetails.html";
 }
 
 // Display the first set of cards when the page loads
