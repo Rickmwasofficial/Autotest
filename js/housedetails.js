@@ -10,23 +10,23 @@ document.addEventListener("DOMContentLoaded", function() {
     
     imgs.innerHTML = `
     <div class="col col-12 mt-1 col-md-6">
-    <img src="${availableHouses[0]}" alt="" width="auto" height="54" class="img-fluid">
+    <img src="${availableHouses[0]}" alt="" loading="lazy" width="auto" height="54" class="img-fluid">
     </div>
     <div class="col col-12 col-md-6">
         <div class="row mb-4 mt-1">
             <div class="col-6">
-            <img src="${availableHouses[1]}" alt="" width="auto" height="54" class="img-fluid">
+            <img src="${availableHouses[1]}" alt="" loading="lazy" width="auto" height="54" class="img-fluid">
             </div>
             <div class="col-6">
-            <img src="${availableHouses[0]}" alt="" width="auto" height="54" class="img-fluid">
+            <img src="${availableHouses[0]}" alt="" loading="lazy" width="auto" height="54" class="img-fluid">
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-            <img src="${availableHouses[1]}" alt="" width="auto" height="54" class="img-fluid">
+            <img src="${availableHouses[1]}" alt="" loading="lazy" width="auto" height="54" class="img-fluid">
             </div>
             <div class="col-6">
-            <img src="${availableHouses[0]}" alt="" width="auto" height="54" class="img-fluid">
+            <img src="${availableHouses[0]}" alt="" loading="lazy" width="auto" height="54" class="img-fluid">
             </div>
         </div>
     </div>
