@@ -46,57 +46,69 @@ document.addEventListener("DOMContentLoaded", function() {
                             <button type="button" data-bs-target="#reviewsCarousel" class="bg-transparent"  data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#reviewsCarousel" class="bg-transparent"  data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
-                        <div class="carousel-inner container-fluid text-dark rounded border" style="width: 90%; height: 180px; overflow: hidden; overflow-y: scroll;">
+                        
+
+                        <div class="carousel-inner container-fluid text-dark rounded border" style="width: 100%; height: auto; overflow: hidden; overflow-y: scroll;">
                             <div class="carousel-item active">
-                                <div class="reviewer">
-                                    <img src="me.jpg">
-                                    <div class="reviwerdet">
-                                        <b style="padding-top: 2px; font-size: 14px;">John Doe</b><br>
-                                        <b style="font-size: 14px;">Tenant</b><br>
-                                        <b style="font-size: 14px;">Rating: 4.5/5.0</b>
+                                <div class="card reviewer border-0">
+                                    <div class="card-body">
+                                        <figure class="d-flex align-items-center m-0 p-0">
+                                            <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
+                                            <figcaption class="ms-3">
+                                                <h4 class="mb-1 h5">John Doe</h4>
+                                                <h5 class="fs-6 text-secondary mb-0">Tenant</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                        <blockquote class="bsb-blockquote-icon mb-3">Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</blockquote>
                                     </div>
                                 </div>
-                                <div class="reviewtext">
-                                    <p>Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</p>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="card reviewer border-0">
+                                    <div class="card-body">
+                                        <figure class="d-flex align-items-center m-0 p-0">
+                                            <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/women/88.jpg"" alt="">
+                                            <figcaption class="ms-3">
+                                                <h4 class="mb-1 h5">Jane Doe</h4>
+                                                <h5 class="fs-6 text-secondary mb-0">Tenant</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                        <blockquote class="bsb-blockquote-icon mb-3">Review 2: Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="card reviewer border-0">
+                                    <div class="card-body">
+                                        <figure class="d-flex align-items-center m-0 p-0">
+                                            <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/men/18.jpg"" alt="">
+                                            <figcaption class="ms-3">
+                                                <h4 class="mb-1 h5">Mike Doe</h4>
+                                                <h5 class="fs-6 text-secondary mb-0">Tenant</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                        <blockquote class="bsb-blockquote-icon mb-3">Review 3: Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</blockquote>
+                                    </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="reviewer">
-                                    <img src="me.jpg">
-                                    <div class="reviwerdet">
-                                        <b style="padding-top: 2px; font-size: 14px;">Jane Doe</b><br>
-                                        <b style="font-size: 14px;">Tenant</b><br>
-                                        <b style="font-size: 14px;">Rating: 4.5/5.0</b>
+                                <div class="card reviewer border-0">
+                                    <div class="card-body">
+                                        <figure class="d-flex align-items-center m-0 p-0">
+                                            <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/women/18.jpg"" alt="">
+                                            <figcaption class="ms-1 h5">
+                                                <h5 class="mb-1">Josephine Doe</h5>
+                                                <h5 class="fs-6 text-secondary mb-0">Tenant</h5>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                        <blockquote class="bsb-blockquote-icon mb-3">Review 4: Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</blockquote>
                                     </div>
-                                </div>
-                                <div class="reviewtext">
-                                    <p>Review2 Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="reviewer">
-                                    <img src="me.jpg">
-                                    <div class="reviwerdet">
-                                        <b style="padding-top: 2px; font-size: 14px;">Mike Doe</b><br>
-                                        <b style="font-size: 14px;">Tenant</b><br>
-                                        <b style="font-size: 14px;">Rating: 4.5/5.0</b>
-                                    </div>
-                                </div>
-                                <div class="reviewtext">
-                                    <p>Review3 Despite its compact size, the room is efficiently designed to maximize functionality and comfort. The layout is well-planned, with designated areas for sleeping, studying, and relaxing. The bed is cozy and equipped with storage drawers underneath, perfect for keeping belongings organized in a limited space. The desk provides ample workspace for studying, with enough room for a laptop and textbooks.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="reviewer">
-                                    <img src="me.jpg">
-                                    <div class="reviwerdet">
-                                        <b style="padding-top: 2px; font-size: 14px;">Josephine Doe</b><br>
-                                        <b style="font-size: 14px;">Tenant</b><br>
-                                        <b style="font-size: 14px;">Rating: 4.5/5.0</b>
-                                    </div>
-                                </div>
-                                <div class="reviewtext">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit explicabo suscipit eos exercitationem, minus nemo libero fuga nostrum accusantium odio sed laudantium natus quis laborum magnam quo vitae porro ea?</p>
                                 </div>
                             </div>
                         </div>
