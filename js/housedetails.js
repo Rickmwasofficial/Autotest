@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
     moreActions.innerHTML = `
         <div class="textdet col-md-6 col-12">
                     <h3>${housedetails[0]}</h3>
-                    <b><span class="text-danger">County: </span>${housedetails[4]}, Kenya</b><br>
-                    <b><span class="text-danger">Location: </span>${housedetails[5]}</b><br>
-                    <b><span class="text-danger">Room Type: </span>${housedetails[2]}</b><br>
+                    <b>County: <span class="text-danger">${housedetails[4]}, Kenya</span></b><br>
+                    <b>Location: <span class="text-danger">${housedetails[5]}</span></b><br>
+                    <b>Room Type: <span class="text-danger">${housedetails[2]}</span></b><br>
                     <b><span class="text-danger">${housedetails[6]}</span></b><br>
                     <h5 class="mt-2">Reviews</h5>
-                    <div id="reviewsCarousel" class="carousel border-bottom border-primary shadow-sm carousel-dark slidereview my-3 my-md-1" data-bs-ride="carousel">
+                    <div id="reviewsCarousel" class="carousel carousel-dark slidereview my-3 my-md-1" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active bg-transparent" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#reviewsCarousel" class="bg-transparent" data-bs-slide-to="1" aria-label="Slide 2"></button>
