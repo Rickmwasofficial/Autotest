@@ -74,6 +74,14 @@ function displayCards(start, stop, def=1) {
   for (let i = start; i < stop; i++) {
     img = images[0]
     cards.innerHTML += `
+    <style>
+      .imgcar {
+        width: 300;
+        height: 300;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    </style>
     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
     <div class="card  my-2">
       <div id="carousel${i}" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
@@ -82,11 +90,11 @@ function displayCards(start, stop, def=1) {
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src=${images[0]} loading="lazy" class="d-block w-100 img-thumbnail" alt="...">
+          <div class="carousel-item active imgcar" style="background: url('download.png')">
+            <img src=${images[0]} class="d-block w-100 img-thumbnail" alt="...">
           </div>
-          <div class="carousel-item">
-            <img src=${images[1]} loading="lazy" class="d-block w-100 img-thumbnail" alt="...">
+          <div class="carousel-item imgcar" style="background: url('download.png')">
+            <img src=${images[1]} class="d-block w-100 img-thumbnail" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel${i}" data-bs-slide="prev">
