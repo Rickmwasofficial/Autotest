@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <b><span class="text-danger">Room Type: </span>${housedetails[2]}</b><br>
                     <b><span class="text-danger">${housedetails[6]}</span></b><br>
                     <h5 class="mt-2">Reviews</h5>
-                    <div id="reviewsCarousel" class="carousel carousel-dark slidereview my-3 my-md-1" data-bs-ride="carousel">
+                    <div id="reviewsCarousel" class="carousel border-bottom border-primary shadow-sm carousel-dark slidereview my-3 my-md-1" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active bg-transparent" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#reviewsCarousel" class="bg-transparent" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         
 
-                        <div class="carousel-inner container-fluid text-dark rounded border border-bottom border-primary shadow-sm" style="width: 100%; height: auto; overflow: hidden; overflow-y: scroll;">
+                        <div class="carousel-inner container-fluid text-dark rounded border" style="width: 100%; height: auto; overflow: hidden; overflow-y: scroll;">
                             <div class="carousel-item active">
                                 <div class="card reviewer border-0">
                                     <div class="card-body">
