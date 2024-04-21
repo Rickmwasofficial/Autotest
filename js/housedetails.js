@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         <div class="carousel-inner container-fluid text-dark rounded border" style="width: 100%; height: auto; overflow: hidden; overflow-y: scroll;">
                             <div class="carousel-item active">
-                                <div class="card reviewer border-0">
+                                <div class="card reviewer border-bottom border-primary shadow-sm">
                                     <div class="card-body">
                                         <figure class="d-flex align-items-center m-0 p-0">
                                             <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/men/88.jpg" alt="">
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                             
                             <div class="carousel-item">
-                                <div class="card reviewer border-0">
+                                <div class="card reviewer border-bottom border-primary shadow-sm">
                                     <div class="card-body">
                                         <figure class="d-flex align-items-center m-0 p-0">
                                             <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/women/88.jpg"" alt="">
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             </div>
                             
                             <div class="carousel-item">
-                                <div class="card reviewer border-0">
+                                <div class="card reviewer border-bottom border-primary shadow-sm">
                                     <div class="card-body">
                                         <figure class="d-flex align-items-center m-0 p-0">
                                             <img class="img-fluid rounded rounded-circle m-0 border border-5" loading="lazy" src="https://randomuser.me/api/portraits/men/18.jpg"" alt="">
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="card reviewer border-0">
+                                <div class="card reviewer border-bottom border-primary shadow-sm">
                                     <div class="card-body">
                                         <figure class="d-flex align-items-center m-0 p-0">
                                             <img class="img-fluid rounded rounded-circle m-0 border border-1" loading="lazy" src="https://randomuser.me/api/portraits/women/18.jpg"" alt="">
