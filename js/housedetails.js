@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                    <div class="bookdiv mt-3">
+                    <div class="bookdiv mt-3" id="bookdiv">
                         <b style="font-size: 20px;">Ksh ${housedetails[1]} per month</b>
                         <div class="in">
                             <b>Rooms: ${housedetails[7]}</b>
@@ -163,3 +163,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
     `
 })
+
+
+const elementToCheck = document.getElementById('bookdiv'); 
+
+function myfunction(value) { 
+    const item = value.getBoundingClientRect(); 
+    return ( 
+        item.top >= 0 && 
+        item.left >= 0 && 
+        item.bottom <= ( 
+            window.innerHeight || 
+            document.documentElement.clientHeight) && 
+        item.right <= ( 
+            window.innerWidth || 
+            document.documentElement.clientWidth) 
+    ); 
+} 
+
+
+document.addEventListener('scroll', (event) => {
+    const target = event.target;
+    const elementToCheck = document.getElementById('bookdiv');
+
+    if (target === document || target === window) {
+        if (myfunction(elementToCheck)) {
+            document.querySelector(".floatingbtn").innerHTML = '';
+        } else {
+            console.log('Element is not visible in viewport');
+        }
+    }
+});
