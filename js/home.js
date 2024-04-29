@@ -2,7 +2,7 @@ let cards = document.querySelector(".cardrow")
 
 // Dummy values for Images and details in the future this will be extracted from the database
 
-let images = ["pexels-josh-sorenson-111093.jpg", "pexels-daniel-maforte-5544034.jpg"]
+let images = ["pexels-josh-sorenson-111093.webp", "pexels-daniel-maforte-5544034.webp"]
 let details = new Map([
   [0, ["JC-FELT Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
   [1, ["Doe Towers", "4000", "Bedsitter", 4.0, "Embu", "Kangaru", "Free Wifi Available", 30, 15]],
