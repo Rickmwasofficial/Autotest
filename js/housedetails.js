@@ -2,7 +2,7 @@ let imgs = document.querySelector(".detailrow")
 let housedetails = JSON.parse(localStorage.getItem("housedetails"))
 let moreActions = document.querySelector(".morecont")
 let availableHouses = [
-    "pexels-josh-sorenson-111093.webp", "pexels-daniel-maforte-5544034.webp"
+    "pexels-josh-sorenson-111093.webp", "pexels-daniel-maforte-5544034.jpg"
 ]
 
 document.title = housedetails[0]
