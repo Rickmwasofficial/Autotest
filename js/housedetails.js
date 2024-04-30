@@ -10,7 +10,28 @@ document.addEventListener("DOMContentLoaded", function() {
     
     imgs.innerHTML = `
     <div class="col col-12 mt-1 col-md-6">
-    <img src="${availableHouses[0]}" alt="" loading="lazy" width="auto" height="54" class="img-fluid">
+    <div id="carouseldetails" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active imgcar" style="background: url('download.png')">
+            <img src=${availableHouses[0]} class="d-block w-100 img-thumbnail" alt="...">
+          </div>
+          <div class="carousel-item imgcar" style="background: url('download.png')">
+            <img src=${availableHouses[1]} class="d-block w-100 img-thumbnail" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouseldetails" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouseldetails" data-bs-slide="next">
+          <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <div class="col col-12 col-md-6">
         <div class="row mb-4 mt-1">
