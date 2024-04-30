@@ -64,9 +64,11 @@ function saveInfo(index) {
     navigate()
   }, 3000)
 }
-// Display the first set of cards when the page loads
-displayCards(0, 12)
 
+// Display the first set of cards when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  displayCards(0, 12)
+})
 // function that uses pagination on home.html to determine which cards are on the page
 function displayCards(start, stop, def=1) {
   console.log(start, stop)
