@@ -116,13 +116,9 @@
     
   <div class="container-md container-fluid ndnav text-white" style="background: red;">
     <div class="row" style="height: 100%;">
-      <a class="col my-auto text-center py-2" href="#">Home</a>
-      <a class="col my-auto text-center py-2" href="#">Categories</a>
-      <a class="col my-auto text-center py-2" href="#">About</a>
-        
-      <!-- Filter Button triggers the offcanvas -->
-        
-      <a class="col my-auto text-center py-2" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasRight">Filter</a>
+      <a class="col my-auto text-center py-2" href="home.html">Home</a>
+      <a class="col my-auto text-center py-2" href="about.html">About Us</a>
+      <a class="col my-auto text-center py-2" href="contact.html">Contact Us</a>
     </div>
       
     <!-- offcanvas where users can search and apply filters -->
@@ -290,7 +286,61 @@
     <button class="btn btn-outline-primary my-2" data-bs-toggle="offcanvas" href="#offcanvasRight" aria-controls="offcanvasRight">Search and Filter</button>
     <div class="container">
       <div class="row cardrow my-2">
-        
+        <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+          <div class="card  my-2">
+            <div id="carousel${i}" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active imgcar" style="background: url('download.png')">
+                  <img src="download.webp" class="d-block w-100 img-thumbnail" alt="...">
+                </div>
+                <div class="carousel-item imgcar" style="background: url('download.png')">
+                  <img src="download.webp" class="d-block w-100 img-thumbnail" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel${i}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-danger" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel${i}" data-bs-slide="next">
+                <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <p class="placeholder-glow">
+                  <span class="placeholder col-12"></span>
+                </p>
+              </h5>
+              <p class="card-text mb-1 placeholder-glow">
+                <p class="placeholder-glow">
+                  <span class="placeholder col-12"></span>
+                </p>
+              </p>
+              <div class="d-flex justify-content-between placeholder-glow my-0 py-0">
+                <p>
+                  <p class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </p>
+                </p>
+                <p><span class="text-danger">
+                  <p class="placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </p>
+                </span></p>
+              </div>
+              <button class="btn btn-primary carousel${i} placeholder-glow" disabled="true">
+                <p class="placeholder-glow">
+                  <span class="placeholder col-12"></span>
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
