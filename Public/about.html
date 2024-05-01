@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Autotes/css/bootstrap.css">
+  <!--Small icon to be displayed on top of the tab-->
+  <link rel="icon" href="pixelcut-export (2).png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>ROOMIFY KENYA</title>
+
+  <style>
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation">
+    <div class="container-md container-fluid d-flex">
+      <a class="navbar-brand d-flex my-auto" href="#">
+        <img src="newlohg-transformed.png" alt="" width="auto" height="54" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end text-end mt-3 navbar-collapse" id="navbarTogglerDemo02">
+
+        <button type="button" class="btn btn-transparent position-relative">
+          <img src="shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset="">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background: red;">
+            0
+            <span class="visually-hidden">Items added to cart</span>
+          </span>
+        </button>
+        <button class="btn text-white ms-3" style="background: red;" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Create Account</button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Welcome to <span class="text-danger">Roomify Kenya</span>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <form action="" class="logform">
+                <p>Already have an account? <button class="text-danger login22 border-0 bg-transparent"
+                    onclick="toLoginForm()">Login</button></p>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Full names">
+                  <label for="floatingInput">Name <span class="text-danger">*</span></label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                    aria-describedby="descemail">
+                  <label for="floatingInput">Email address <span class="text-danger">*</span></label>
+                  <div id="descemail" class="form-text">
+                    example@gmail.com
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    aria-describedby="desctext">
+                  <label for="floatingPassword">Password <span class="text-danger">*</span></label>
+                  <div id="desctext" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                    spaces, special characters, or emoji.
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword2" placeholder="Password">
+                  <label for="floatingPassword2">Confirm Password <span class="text-danger">*</span></label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn text-light" style="background: red;" disabled="true">Create</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-md container-fluid ndnav text-white" style="background: red;">
+    <div class="row" style="height: 100%;">
+      <a class="col my-auto text-center py-2" href="home.html">Home</a>
+      <a class="col my-auto text-center py-2" href="about.html">About Us</a>
+      <a class="col my-auto text-center py-2" href="contact.html">Contact Us</a>
+    </div>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header bg-danger">
+        <h5 id="offcanvasRightLabel">ROOMIFY KENYA</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <label for="exampleDataList" class="form-label text-dark">Search By University</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+          <option value="University Of Embu">
+          <option value="Chuka University, Embu Branch">
+          <option value="Mount Kenya University, Embu branch">
+          <option value="Embu University College">
+          <option value="KMTC, Embu">
+        </datalist>
+        <h4 class="text-dark mt-3">Filter</h4>
+        <h5 class="text-dark mt-3">Rent Amount</h5>
+        <div class="rentdiv">
+          <div class="form-check defaultchecked">
+            <input class="form-check-input" type="radio" name="rent" id="rent0" value="3" checked>
+            <label class="form-check-label text-dark" for="rent0">
+              All
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent1" value="1">
+            <label class="form-check-label text-dark" for="rent1">
+              KSH 3000 - 7000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent2" value="2">
+            <label class="form-check-label text-dark" for="rent2">
+              KSH 7000 - 12000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent3" value="3">
+            <label class="form-check-label text-dark" for="rent3">
+              KSH 12000 - 15000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rent" id="rent4" value="4">
+            <label class="form-check-label text-dark" for="rent4">
+              KSH 15000 - 20000
+            </label>
+          </div>
+        </div>
+        <h5 class="text-dark mt-3">Room Type</h5>
+        <div class="roomdiv">
+          <div class="form-check defaultchecked">
+            <input class="form-check-input" type="radio" name="roomtype" id="allroom" value="3" checked>
+            <label class="form-check-label text-dark" for="allroom">
+              All
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="bedsitter" value="0">
+            <label class="form-check-label text-dark" for="bedsitter">
+              Bedsitter
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="onebedroom" value="1">
+            <label class="form-check-label text-dark" for="onebedroom">
+              One bedroom
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="twobedroom" value="2">
+            <label class="form-check-label text-dark" for="twobedroom">
+              Two Bedroom
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="roomtype" id="moreroom" value="3">
+            <label class="form-check-label text-dark" for="moreroom">
+              More
+            </label>
+          </div>
+        </div>
+        <h5 class="text-dark mt-3">Wifi Enabled</h5>
+        <div class="wifidiv">
+          <div class="form-check defaultchecked">
+            <input class="form-check-input" type="radio" name="Wifi" id="wifiyes" value="1" checked>
+            <label class="form-check-label text-dark" for="wifiyes">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Wifi" id="wifino" value="0">
+            <label class="form-check-label text-dark" for="wifino">
+              No
+            </label>
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-12 mx-auto my-4 loadfilter">
+          <button class="btn btn-primary" type="button" id="liveToastBtn">Apply Filters</button>
+          <button class="btn btn-danger clear" type="button" id="clearFilterToastBtn">Clear Filters</button>
+        </div>
+
+        <div class="position-fixed bottom-0 end-0 ms-4 p-2" style="z-index: 11">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="houseonly.png" width="40px" height="40px" class="rounded me-2" alt="...">
+              <strong class="me-auto">Roomify Kenya</strong>
+              <small>Just Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-success">
+              Filters applied successfully
+            </div>
+          </div>
+        </div>
+        <div class="position-fixed bottom-0 end-0 ms-4 p-2" style="z-index: 11">
+          <div id="clearFilterToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="houseonly.png" width="40px" height="40px" class="rounded me-2" alt="...">
+              <strong class="me-auto">Roomify Kenya</strong>
+              <small>Just Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-success">
+              Filters removed successfully
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mb-3 container-md" style="background: url('watercolor-texture-background.jpg'); background-size: cover; background-blend-mode: darken; background-position: center;">
+    <div class="row my-auto">
+        <div class="col-md-2"></div>
+        <div class="col-12 col-md-8 my-5">
+          <div class="card text-center ms-lg-5 border-0 bg-transparent">
+            
+            <div class="card-body">
+              <h1 style="color: blue;">Book Smart. Live Smart</h1>
+              <p style="color: rgb(0, 0, 0);">Are you a student searching for the ideal place to call home during your university journey? Or are you planning to join University in an unfamiliar area and you don't know where to find houses? Look no further! Roomify is the ultimate platform designed to simplify your search for houses near your University. Here's Why you should rely on us to make your house hunting easier. 
+              </p>
+              <a href="#" class="btn text-white col-8" style="background: red;" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+  </div>
+
+  <div class="container">
+        <div class="container-fluid mx-auto">
+            <div class="card mb-3 p-md-5 p-2 bg-light border-secondary mx-auto" style="max-width: 90%; min-height: 250px;">
+                <div class="row g-0 my-auto">
+                  <div class="col-md-4 my-auto">
+                    <img src="undraw_relaxing_at_home_re_mror.svg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-6 my-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">Mobile Accessibility</h5>
+                      <p class="card-text">Search for your ideal housing on the go! Our mobile-friendly platform ensures you can browse and book listings anytime, anywhere.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card mb-3 p-md-5 bg-light border-secondary p-2 mx-auto" style="max-width: 90%; min-height: 250px;">
+                <div class="row g-0 my-auto">
+                  
+                  <div class="col-md-6 my-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">Find houses that fit your budget</h5>
+                      <p class="card-text">The Roomify algorithm allows you to search houses according to your budget. No hassle just results</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-4">
+                    <img src="undraw_savings_re_eq4w.svg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                </div>
+              </div>
+        
+            <div class="card mb-3 p-md-5 bg-light border-secondary p-2 mx-auto" style="max-width: 90%; min-height: 250px;">
+                <div class="row g-0 my-auto">
+                  <div class="col-md-4 h-20 w-30">
+                    <img src="undraw_verified_re_4io7.svg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-6 my-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">Verified Listings</h5>
+                      <p class="card-text">Listings on Roomify are verified to avoid scammers. Including reviews and ratings to ensure your security and availability of nescessary amenities. Ensuring you get what you pay for.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 p-md-5 bg-light border-secondary p-2 mx-auto" style="max-width: 90%; min-height: 250px;">
+                <div class="row g-0 my-auto">
+                  <div class="col-md-6 my-auto">
+                    <div class="card-body">
+                      <h5 class="card-title">Find Your Desired Home</h5>
+                      <p class="card-text">With Roomify you get to find the best houses, that suit your desires. This is through availability of images of the houses and many listings that you get to choose from</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-4">
+                    <img src="undraw_apartment_rent_o-0-ut.svg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+  </div>
+
+  
+  <div class="container-md container-fluid">
+    <h2 class="text-center my-4">Frequently asked questions</h2>
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  How Do I Find houses?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">On the homepage, click on search and filter, which will provide you with options you can choose from based on your budget. In the search bar, you search for the university you are in, or have been admitted to, then check all filters according to your wishes, and click apply filters. The houses that will then be displayed, will be relevant to that.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  How do I book a room?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">After Searching for house listings according to your wishes. You can click on 'See more details' to views more details of the house you like i.e Reviews, Ratings, etc.. If the house pleases you, at the bottom you can click book room, then pay the service fee and automatically the landlord will be notified.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  How do I communicate with the Landlord for further arrangements?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">After paying the service fee, the landlord will receive your contacts, and we will also send you the contacts for easier communication afterwards</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                How do I add a house to cart, and does adding to cart mean that I have reserved booking?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">No, adding a house to your cart does not mean that you have booked it. You use your cart to store the listing that pleases you, so that you can easily find it later. And you can keep on looking at other available listings.</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <section class="container p-5">
+    <div class="container-fluid">
+        <h2 class="text-center text-dark">Meet the Team</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" style="width: 120px; height: 120px;" class="rounded-circle mb-3 img-fluid" alt="" srcset="">
+                        <h3 class="card-title mb-3">James Ngatia</h3>
+                        <p class="card-text text-center">Co-Founder</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/20.jpg" style="width: 120px; height: 120px;" class="rounded-circle mb-3 img-fluid" alt="" srcset="">
+                        <h3 class="card-title mb-3">Erick Mwangi</h3>
+                        <p class="card-text text-center">Founder and CEO</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/10.jpg" style="width: 120px; height: 120px;" class="rounded-circle mb-3 img-fluid" alt="" srcset="">
+                        <h3 class="card-title mb-3">Alex Mwaniki</h3>
+                        <p class="card-text text-center">Co-Founder</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-dark text-light mb-0" style="height: auto;">
+    <div class="container pb-3">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="logoname justify-content-center mt-2">
+            <img class="mylogo" src="newlohg-transformed.png" width="auto" height="54" />
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 col-12 my-4">
+          <p clas="justify-content-center"><b>BOOK SMART. LIVE SMART.</b></p>
+        </div>
+      </div>
+      <h5>Any Complaints or Suggestions? Contact Us</h5>
+      <div class="row mt-2 mb-1">
+        <div class="col-12 col-md-4">
+          <div class="row mt-2 mb-1">
+            <div class="col-3">
+              <h5><span class="badge">
+                  <img src="317720_social media_tweet_twitter_social_icon.svg" alt="">
+            </div>
+            <div class="col-3">
+              <h5><span class="badge">
+                  <img src="4202011_email_gmail_mail_logo_social_icon.svg" style="margin-left: -10px;" alt="">
+
+            </div>
+            <div class="col-3">
+              <h5><span class="badge">
+                  <img src="icons8-whatsapp.svg" style="margin-left: -10px;" alt="">
+            </div>
+            <div class="col-3">
+              <h5><span class="badge">
+                  <img src="icons8-instagram.svg" style="margin-left: -10px;" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 align-self-end">
+          <a href="#navigation" class="btn btn-primary rounded-pill" onclick="toTop()">
+            Back to Top
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-12 col-md-4">
+          <p class="mx-auto">&copy;2023 ROOMIFY KENYA. All rights reserved.</p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/Autotest/js/bootstrap.js"></script>
+  <script src="/Autotest/js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
