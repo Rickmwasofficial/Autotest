@@ -52,7 +52,7 @@ function saveInfo(index) {
     localStorage.clear()
     console.log(details.get(index))
     localStorage.setItem("housedetails", JSON.stringify(details.get(index)))
-    window.location.href = "https://rickmwasofficial.github.io/Autotest/Public/housedetails.html";
+    window.location.href = "https://kampushaven.vercel.app/Public/housedetails.html";
   }
   document.querySelector(`.carousel${index}`).innerHTML = `
     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
